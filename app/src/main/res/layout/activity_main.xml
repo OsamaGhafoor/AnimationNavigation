@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rupins.drawercardbehaviour.CardDrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/tertiary_text_light"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/activity_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/tertiary_text_light"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@android:color/tertiary_text_light"
+        app:itemTextColor="@color/white"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/menu_drawer"/>
+
+
+</com.rupins.drawercardbehaviour.CardDrawerLayout>
